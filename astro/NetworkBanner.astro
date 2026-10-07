@@ -1,0 +1,15 @@
+---
+// The Berlin Experiences network banner for Astro sites. The layout must load
+// /network/network-banner.css in the head (see the README).
+import { renderBanner } from '../index.js';
+
+interface Props {
+  /** This site's id from sites.js, or null for a page outside the list. */
+  current: string | null;
+  /** Where the site serves the kit's files. Default '/network/'. */
+  base?: string;
+}
+
+const { current, base } = Astro.props;
+---
+<Fragment set:html={renderBanner(current, { base })} />

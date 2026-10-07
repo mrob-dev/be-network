@@ -1,0 +1,52 @@
+{
+  "name": "be-network",
+  "version": "2.0.0",
+  "description": "The Berlin Experiences network banner: the list of sites, stylesheet, thumbnails and components, shared by every site at build time",
+  "private": true,
+  "type": "module",
+  "keywords": [
+    "astro-component"
+  ],
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    },
+    "./astro": "./astro/NetworkBanner.astro",
+    "./react": {
+      "types": "./react/NetworkBanner.d.ts",
+      "default": "./react/NetworkBanner.js"
+    },
+    "./assets/*": "./assets/*"
+  },
+  "bin": {
+    "be-network": "bin/be-network.js"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "sites.js",
+    "astro",
+    "react",
+    "bin",
+    "assets"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "peerDependencies": {
+    "astro": ">=4",
+    "react": ">=19"
+  },
+  "peerDependenciesMeta": {
+    "astro": {
+      "optional": true
+    },
+    "react": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
