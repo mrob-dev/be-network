@@ -128,7 +128,9 @@ a.bxn__item:focus-visible {
   outline: 2px solid var(--bxn-accent);
   outline-offset: 2px;
 }
-@media (max-width: 900px) {
+/* Thumbnail above the text until the strip has its full 1200px: below that, a 96px thumbnail
+   beside the text leaves too little room for names like "Berlinfographics". */
+@media (max-width: 1199px) {
   .bxn__item {
     grid-template-columns: 1fr;
     align-content: start;
