@@ -40,6 +40,16 @@ example (github.com/mrob-dev/whereisthewall).
 - **Compare against the live reference only when it's current.** The reference
   site must be live on the version being installed before anything is compared
   with it.
+- **Clear the CDN after a static deploy.** `/network/network-banner.css` keeps
+  the same URL in every version, and Hostinger serves it with
+  `Cache-Control: public, max-age=604800`. The static-site deploy doesn't purge
+  the CDN's compressed (Brotli) copy: democracydestroyed.com went on serving
+  the 5 October stylesheet to browsers for a week after two deploys, while
+  uncompressed and cache-busted requests (curl, `?v=`) got the new one. After
+  deploying, clear the cache (Hostinger MCP `hosting_cache_clear-website`), then
+  check from a real browser with `fetch('/network/network-banner.css',
+  {cache: 'no-store'})`, not with curl. Returning visitors can still hold the
+  old file for up to seven days.
 
 ## The prompt
 
@@ -83,5 +93,10 @@ own copies.
    node_modules/be-network/assets/network-banner.css. If it isn't, the reference is out of date:
    compare against the package README instead and tell me.
 7. Commit with a message that says the banner now comes from be-network v2, then deploy the site the
-   way it is normally deployed and check the live homepage.
+   way it is normally deployed. On Hostinger, clear the website cache afterwards (Hostinger MCP
+   `hosting_cache_clear-website`): the deploy doesn't purge the CDN's compressed copy of the
+   unchanged-URL stylesheet. Then check the live homepage from a real browser, including
+   fetch('/network/network-banner.css', {cache: 'no-store'}) containing --bxn-here-bg. curl with no
+   Accept-Encoding, or a ?v= query, gets a different cache entry and can show the new file while
+   browsers still get the old one.
 ```
