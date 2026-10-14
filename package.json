@@ -1,6 +1,6 @@
 {
   "name": "be-network",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "The Berlin Experiences network banner: the list of sites, stylesheet, thumbnails and components, shared by every site at build time",
   "private": true,
   "type": "module",

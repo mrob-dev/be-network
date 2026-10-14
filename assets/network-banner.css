@@ -1,7 +1,8 @@
 /*
  * Berlin Experiences network banner — shared across all the network's sites.
- * Canonical copy: https://whereisthewall.com/network/network-banner.css
- * Copy this file verbatim; don't edit it per site. Everything is scoped to
+ * Canonical copy: the be-network package, https://github.com/mrob-dev/be-network
+ * (assets/network-banner.css). Sites get it through `be-network sync`; don't
+ * edit the synced copy, change the package. Everything is scoped to
  * .bxn so it can't collide with the host site's styles, and the host may only
  * override the --bxn-* tokens (usually just --bxn-display, for its heading font).
  */

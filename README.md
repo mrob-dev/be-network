@@ -21,8 +21,10 @@ another domain, nothing for a privacy notice to declare.
 
 ## Using it on a site
 
-Install from GitHub (the repository is private; git on the build machine needs
-access, which it has wherever `gh auth` or Git Credential Manager is set up):
+Install from GitHub. The repository is public, so any machine can install it
+over HTTPS without credentials, including Hostinger's server builds and GitHub
+Actions. The lockfile may record it as `git+ssh://…`; npm still fetches it over
+HTTPS where SSH isn't set up.
 
 ```bash
 npm i git+https://github.com/mrob-dev/be-network.git#semver:^2.0.0
@@ -114,6 +116,11 @@ and add `<link rel="stylesheet" href="/network/network-banner.css">` to the
 
 ## Versions
 
+- **2.0.2**: text only. The stylesheet's header names this repository as the
+  canonical copy (it named whereisthewall.com/network/); the docs say the
+  repository is public; ADOPT.md gains the lessons of the first switches.
+- **2.0.1**: thumbnails sit above the text until the strip has its full
+  1200px (was 900px), so long names such as "Berlinfographics" fit.
 - **2.0.0**: this package. Eight sites (adds Berlinfographics, Battle of Berlin
   1945, Potsdam Conference 1945 and Democracy Destroyed); the current entry gets
   a background (`--bxn-here-bg`) instead of a greyed-out thumbnail; two rows on
