@@ -13,6 +13,8 @@ export interface BannerOptions {
 export declare const network: { name: string; url: string };
 export declare const sites: readonly NetworkSite[];
 export declare const bannerLabel: string;
+/** Inline script for the carousel autoplay (renderBanner already appends it). */
+export declare const bannerScript: string;
 
 /** The whole banner. `current` is this site's id, or null for a page outside the list. */
 export declare function renderBanner(current: string | null, options?: BannerOptions): string;

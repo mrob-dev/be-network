@@ -19,6 +19,8 @@ example (github.com/mrob-dev/whereisthewall).
 | Potsdam Conference | Next.js | none |
 | Berlinfographics | ? | ? |
 | Berlin Excursions | ? | uses the package (^2.0.1) with `current={null}`: not in `sites.js` |
+| Germany Divided | Astro 7 | switched: 2.1.0, live 4 Nov 2026 |
+| Berlin Deportations | Astro | in `sites.js` since 2.1.0; banner not yet added |
 
 ## Lessons from the first switches
 
@@ -85,8 +87,8 @@ own copies.
 5. Update anything in this repo that describes the old arrangement (CLAUDE.md, docs, comments that
    point at whereisthewall.com/network/ as the canonical kit) to point at be-network instead. If the
    site has a credits page that lists the network thumbnails, use the credits in the package README.
-6. Check it: the build passes; the homepage shows all eight sites in the package's order, with this
-   site's entry as "You are here" (pale background, badge, not a link) and the other seven linking
+6. Check it: the build passes; the homepage shows all ten sites in the package's order, with this
+   site's entry as "You are here" (pale background, badge, not a link) and the other nine linking
    out; every thumbnail loads; no console errors. Look at it at desktop width and at 390px wide.
    Compare it with https://democracydestroyed.com/ (the reference), but first check that the live
    https://democracydestroyed.com/network/network-banner.css is identical to

@@ -8,12 +8,14 @@ export const network = {
 };
 
 export const sites = [
-  { id: 'whereisthewall', name: 'Where Is The Wall', url: 'https://whereisthewall.com', blurb: 'Pieces of the Berlin Wall standing around the world' },
-  { id: 'berlinwallescapes', name: 'Berlin Wall Escapes', url: 'https://berlinwallescapes.com', blurb: 'Under, over and through the Wall: the escapes' },
-  { id: 'victimsofthewall', name: 'Victims of the Wall', url: 'https://victimsofthewall.com', blurb: 'The 140 people who died at the Berlin Wall' },
-  { id: 'berlinisclosed', name: 'Berlin Is Closed', url: 'https://berlinisclosed.com', blurb: 'Which Berlin museums and landmarks are shut, and until when' },
-  { id: 'berlinfographics', name: 'Berlinfographics', url: 'https://berlinfographics.com', blurb: 'The history of Berlin drawn from the record, in original infographics' },
+  { id: 'democracydestroyed', name: 'Democracy Destroyed', url: 'https://democracydestroyed.com', blurb: 'The first 100 days of Nazi rule, day by day, 30 January – 9 May 1933' },
+  { id: 'berlindeportations', name: 'Berlin Deportations', url: 'https://www.berlindeportations.com', blurb: 'A memorial to the Jews deported from Berlin, 1941–1945' },
   { id: 'battleofberlin', name: 'Battle of Berlin 1945', url: 'https://battleofberlin.com', blurb: 'The Battle of Berlin reconstructed day by day, 16 April – 2 May 1945' },
   { id: 'potsdamconference', name: 'Potsdam Conference 1945', url: 'https://potsdamconference.com', blurb: 'A day-by-day record of the Potsdam Conference, 17 July – 2 August 1945' },
-  { id: 'democracydestroyed', name: 'Democracy Destroyed', url: 'https://democracydestroyed.com', blurb: 'The first 100 days of Nazi rule, day by day, 30 January – 9 May 1933' },
+  { id: 'victimsofthewall', name: 'Victims of the Wall', url: 'https://victimsofthewall.com', blurb: 'The 140 people who died at the Berlin Wall' },
+  { id: 'berlinwallescapes', name: 'Berlin Wall Escapes', url: 'https://berlinwallescapes.com', blurb: 'Under, over and through the Wall: the escapes' },
+  { id: 'whereisthewall', name: 'Where Is The Wall', url: 'https://whereisthewall.com', blurb: 'Pieces of the Berlin Wall standing around the world' },
+  { id: 'germanydivided', name: 'Germany Divided', url: 'https://germanydivided.com', blurb: 'Where the old East–West border still shows up in the data' },
+  { id: 'berlinfographics', name: 'Berlinfographics', url: 'https://berlinfographics.com', blurb: 'The history of Berlin drawn from the record, in original infographics' },
+  { id: 'berlinisclosed', name: 'Berlin Is Closed', url: 'https://berlinisclosed.com', blurb: 'Which Berlin museums and landmarks are shut, and until when' },
 ];

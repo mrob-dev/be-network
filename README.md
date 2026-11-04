@@ -6,8 +6,10 @@ Every site installs it as a package and renders the banner from it at build
 time, so the list of sites, the wording, the markup, the stylesheet and the
 thumbnails are the same everywhere.
 
-The banner is static HTML in each site's own pages: no script, no request to
-another domain, nothing for a privacy notice to declare.
+The banner is static HTML in each site's own pages plus one small inline
+script (since 2.1.0) that turns the phone and tablet row into a slideshow: no
+request to another domain, no cookies, nothing for a privacy notice to declare.
+Without the script the row still swipes.
 
 | Path | What it is |
 | --- | --- |
@@ -116,6 +118,17 @@ and add `<link rel="stylesheet" href="/network/network-banner.css">` to the
 
 ## Versions
 
+- **2.1.0**: ten sites. Adds Berlin Deportations and Germany Divided, and a new
+  order: Democracy Destroyed, Berlin Deportations, Battle of Berlin 1945,
+  Potsdam Conference 1945, Victims of the Wall, Berlin Wall Escapes, Where Is
+  The Wall, Germany Divided, Berlinfographics, Berlin Is Closed. Layout: two
+  rows of five from 1000px (thumbnail beside the text from 1500px, above it
+  below that); under 1000px one draggable, snapping row (about three cards on a
+  tablet, one and a bit on a phone) that advances as a slideshow every few
+  seconds, pausing while touched, hovered, focused or scrolled, and not moving
+  for visitors who prefer reduced motion. `renderBanner` now appends a small
+  inline `<script>` (`bannerScript`, also rendered by the React component).
+
 - **2.0.2**: text only. The stylesheet's header names this repository as the
   canonical copy (it named whereisthewall.com/network/); the docs say the
   repository is public; ADOPT.md gains the lessons of the first switches.
@@ -129,7 +142,7 @@ and add `<link rel="stylesheet" href="/network/network-banner.css">` to the
 
 ## Thumbnail credits
 
-The seven photographs are public domain or CC0, and the Berlinfographics
+The nine photographs are public domain or CC0, and the Berlinfographics
 thumbnail is Berlin Experiences' own artwork, so no attribution is required.
 Credited here anyway, and fine to add to a site's credits page:
 
@@ -157,3 +170,11 @@ Credited here anyway, and fine to add to a site's credits page:
   27 February 1933. Press photograph, Narodowe Archiwum Cyfrowe (National
   Digital Archives of Poland), public domain.
   [Commons](https://commons.wikimedia.org/wiki/File:3_1_0_17_11933_8_1_32674_REICHSTAGSBRAND_Reichstag_Fire_German_Parliament_Berlin_1933-02-27_Assembly_chamber_destroyed_by_the_fire._News_photo_February_1933._Narodowe_Archiwum_Cyfrowe_PDM.jpg)
+- Berlin Deportations: Stolpersteine for Alfred and Selma Pinkus,
+  Berlin-Weißensee, deported on 12 March 1943 and murdered in Auschwitz.
+  Singlespeedfahrer, CC0.
+  [Commons](https://commons.wikimedia.org/wiki/File:Berlin_Stolpersteine_Pinkus.jpg)
+- Germany Divided: "Halt! Hier Zonengrenze": the western side of the
+  inner-German border with the GDR fence and a watchtower behind. Sir James
+  (retouched by ChrisO), public domain.
+  [Commons](https://commons.wikimedia.org/wiki/File:Gdr_border_outer_strip.jpg)

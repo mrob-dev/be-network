@@ -1,8 +1,8 @@
 // The Berlin Experiences network banner for React and Next.js sites. Plain JavaScript (no JSX), so
-// it needs no transpiling from node_modules. Render it on the server: it is static markup with no
-// interactivity. React 19 hoists the stylesheet <link> into the head and loads it once.
+// it needs no transpiling from node_modules. Render it on the server: it is static markup plus a small inline
+// script for the carousel autoplay. React 19 hoists the stylesheet <link> into the head and loads it once.
 import { createElement, Fragment } from 'react';
-import { bannerLabel, renderBannerInner } from '../index.js';
+import { bannerLabel, bannerScript, renderBannerInner } from '../index.js';
 
 export default function NetworkBanner({ current, base, stylesheet = true }) {
   return createElement(
@@ -14,5 +14,7 @@ export default function NetworkBanner({ current, base, stylesheet = true }) {
       'aria-label': bannerLabel,
       dangerouslySetInnerHTML: { __html: renderBannerInner(current, { base }) },
     }),
+    // Carousel autoplay (runs where the server-rendered HTML is parsed; harmless if it doesn't run).
+    createElement('script', { dangerouslySetInnerHTML: { __html: bannerScript } }),
   );
 }
