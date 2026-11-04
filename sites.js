@@ -10,8 +10,8 @@ export const network = {
 export const sites = [
   { id: 'democracydestroyed', name: 'Democracy Destroyed', url: 'https://democracydestroyed.com', blurb: 'The first 100 days of Nazi rule, day by day, 30 January – 9 May 1933' },
   { id: 'berlindeportations', name: 'Berlin Deportations', url: 'https://www.berlindeportations.com', blurb: 'A memorial to the Jews deported from Berlin, 1941–1945' },
-  { id: 'battleofberlin', name: 'Battle of Berlin 1945', url: 'https://battleofberlin.com', blurb: 'The Battle of Berlin reconstructed day by day, 16 April – 2 May 1945' },
-  { id: 'potsdamconference', name: 'Potsdam Conference 1945', url: 'https://potsdamconference.com', blurb: 'A day-by-day record of the Potsdam Conference, 17 July – 2 August 1945' },
+  { id: 'battleofberlin', name: 'The Battle of Berlin', url: 'https://battleofberlin.com', blurb: 'The Battle of Berlin reconstructed day by day, 16 April – 2 May 1945' },
+  { id: 'potsdamconference', name: 'The Potsdam Conference', url: 'https://potsdamconference.com', blurb: 'A day-by-day record of the Potsdam Conference, 17 July – 2 August 1945' },
   { id: 'victimsofthewall', name: 'Victims of the Wall', url: 'https://victimsofthewall.com', blurb: 'The 140 people who died at the Berlin Wall' },
   { id: 'berlinwallescapes', name: 'Berlin Wall Escapes', url: 'https://berlinwallescapes.com', blurb: 'Under, over and through the Wall: the escapes' },
   { id: 'whereisthewall', name: 'Where Is The Wall', url: 'https://whereisthewall.com', blurb: 'Pieces of the Berlin Wall standing around the world' },

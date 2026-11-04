@@ -118,6 +118,10 @@ and add `<link rel="stylesheet" href="/network/network-banner.css">` to the
 
 ## Versions
 
+- **2.2.0**: names only. "Battle of Berlin 1945" is now "The Battle of Berlin"
+  and "Potsdam Conference 1945" is now "The Potsdam Conference" (the blurbs
+  still give the dates).
+
 - **2.1.0**: ten sites. Adds Berlin Deportations and Germany Divided, and a new
   order: Democracy Destroyed, Berlin Deportations, Battle of Berlin 1945,
   Potsdam Conference 1945, Victims of the Wall, Berlin Wall Escapes, Where Is
