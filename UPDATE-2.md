@@ -36,7 +36,7 @@ script to the banner markup.
 | --- | --- | --- |
 | Germany Divided | 2.2.0 | done |
 | Democracy Destroyed | package 2.0.2 | `npm update be-network`, build, deploy |
-| Where Is The Wall | package 2.0.1 | `npm update be-network`, build, deploy |
+| Where Is The Wall | 2.2.0 | done (live 5 Nov 2026; banner in the site footer, not under the hero) |
 | Berlin Excursions | package ^2.0.1, `current={null}` | `npm update be-network`, build, deploy |
 | Victims of the Wall | 1.x kit | switch to the package (ADOPT.md) |
 | Berlin Wall Escapes | 1.x kit | switch to the package (ADOPT.md) |
