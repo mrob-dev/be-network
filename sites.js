@@ -18,4 +18,5 @@ export const sites = [
   { id: 'germanydivided', name: 'Germany Divided', url: 'https://germanydivided.com', blurb: 'Where the old East–West border still shows up in the data' },
   { id: 'berlinfographics', name: 'Berlinfographics', url: 'https://berlinfographics.com', blurb: 'The history of Berlin drawn from the record, in original infographics' },
   { id: 'berlinisclosed', name: 'Berlin Is Closed', url: 'https://berlinisclosed.com', blurb: 'Which Berlin museums and landmarks are shut, and until when' },
+  { id: 'christmasmarkets', name: 'Christmas Markets Berlin', url: 'https://christmasmarkets.berlin', blurb: "Berlin's Christmas markets, checked by a local guide: what's open, when, and what it costs" },
 ];

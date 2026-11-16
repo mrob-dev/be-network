@@ -118,6 +118,10 @@ and add `<link rel="stylesheet" href="/network/network-banner.css">` to the
 
 ## Versions
 
+- **2.3.0**: eleven sites. Adds Christmas Markets Berlin (christmasmarkets.berlin) as the last
+  entry. Layout: two rows of six from 1200px (thumbnail beside the text from 1900px, above it
+  below that); under 1200px the draggable, snapping row.
+
 - **2.2.0**: names only. "Battle of Berlin 1945" is now "The Battle of Berlin"
   and "Potsdam Conference 1945" is now "The Potsdam Conference" (the blurbs
   still give the dates).
@@ -147,7 +151,7 @@ and add `<link rel="stylesheet" href="/network/network-banner.css">` to the
 ## Thumbnail credits
 
 The nine photographs are public domain or CC0, and the Berlinfographics
-thumbnail is Berlin Experiences' own artwork, so no attribution is required.
+and Christmas Markets Berlin thumbnails are Berlin Experiences' own artwork, so no attribution is required.
 Credited here anyway, and fine to add to a site's credits page:
 
 - Where Is The Wall: The Wall Project, Wende Museum, Los Angeles. Carol M.

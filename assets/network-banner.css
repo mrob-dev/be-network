@@ -60,7 +60,7 @@
 }
 .bxn__list {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   row-gap: 16px;
   margin: 0;
   padding: 0;
@@ -129,13 +129,13 @@ a.bxn__item:focus-visible {
   outline: 2px solid var(--bxn-accent);
   outline-offset: 2px;
 }
-/* Layouts (10 sites):
-   - large desktop (1500px and up): two rows of five, thumbnail beside the text;
-   - laptop (1000–1499px): two rows of five, thumbnail above the text;
-   - tablet (600–999px): one draggable row, about three cards in view;
+/* Layouts (11 sites):
+   - large desktop (1900px and up): two rows of six, thumbnail beside the text;
+   - desktop (1200–1899px): two rows of six, thumbnail above the text;
+   - tablet and small laptop (600–1199px): one draggable row, about three cards in view;
    - phone (below 600px): one draggable row, one card and a glimpse of the next.
    In the row layouts a small inline script (see index.js) advances the cards as a slideshow. */
-@media (max-width: 1499px) {
+@media (max-width: 1899px) {
   .bxn__item {
     grid-template-columns: 1fr;
     align-content: start;
@@ -147,7 +147,7 @@ a.bxn__item:focus-visible {
     aspect-ratio: 3 / 2;
   }
 }
-@media (max-width: 999px) {
+@media (max-width: 1199px) {
   .bxn {
     padding: 16px 0 16px 6%;
     gap: 12px;
